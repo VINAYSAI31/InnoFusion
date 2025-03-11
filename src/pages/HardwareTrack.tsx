@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import ProblemCard, { ProblemCardProps } from "../components/ProblemCard";
+import ProblemCard from "../components/ProblemCard";
 
 // Sample data for hardware track problem statements
 const hardwareProblems = [
