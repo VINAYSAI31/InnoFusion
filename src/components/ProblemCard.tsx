@@ -144,14 +144,14 @@ const ProblemCard = ({
             </div>
 
             <div className="text-center">
-              <Link
+              {/* <Link
                 to="https://forms.google.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-hackathon-blue text-white px-6 py-3 rounded-md font-medium hover:bg-hackathon-blue-light transition-colors shadow-md hover:shadow-lg"
               >
                 Register for this challenge
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

@@ -169,14 +169,14 @@ const SoftwareTrack = () => {
             <h3 className="text-xl font-semibold text-hackathon-blue mb-4">
               Ready to take on a challenge?
             </h3>
-            {/* <Link
+            <Link
               to="https://forms.google.com"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-hackathon-blue text-white px-8 py-3 rounded-full font-medium hover:bg-hackathon-blue-light transition-colors shadow-lg hover:shadow-xl"
             >
               Register Now
-            </Link> */}
+            </Link>
           </div>
         </div>
       </main>

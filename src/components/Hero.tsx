@@ -27,7 +27,7 @@ const Hero = () => {
             }`}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-hackathon-blue mb-6 tracking-tight leading-tight">
-              SODS & Garuda Club{" "}
+              InnoFusion{" "}
               <span className="text-hackathon-orange">Hackathon</span>
             </h1>
           </div>
@@ -59,7 +59,7 @@ const Hero = () => {
               loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
-            {/* <Link
+            <Link
               to="https://forms.google.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -67,7 +67,7 @@ const Hero = () => {
             >
               Register Now
               <ArrowRight size={18} className="ml-2" />
-            </Link> */}
+            </Link>
           </div>
         </div>
 
