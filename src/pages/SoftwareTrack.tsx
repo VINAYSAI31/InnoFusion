@@ -1,10 +1,9 @@
-
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import ProblemCard from "../components/ProblemCard";
+import ProblemCard, { ProblemCardProps } from "../components/ProblemCard";
 
 // Sample data for software track problem statements
 const softwareProblems = [
@@ -107,24 +106,24 @@ const softwareProblems = [
 ];
 
 const SoftwareTrack = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
+  // const [isLoaded, setIsLoaded] = useState(true);
 
-  // Scroll to top on page load
-  useEffect(() => {
-    window.scrollTo(0, 0);
+  // // Scroll to top on page load
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
     
-    // Simulate loading for smoother animations
-    const timer = setTimeout(() => {
-      setIsLoaded(true);
-    }, 100);
+  //   // Simulate loading for smoother animations
+  //   const timer = setTimeout(() => {
+  //     setIsLoaded(true);
+  //   }, 100);
     
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   return (
     <>
       <Navbar />
-      <main className="min-h-screen pt-24 pb-16">
+      <main className="min-h-screen pt-32 pb-16">
         <div className="container mx-auto px-4 md:px-6">
           <div className="mb-8">
             <Link
@@ -139,9 +138,7 @@ const SoftwareTrack = () => {
             </Link>
 
             <div
-              className={`transition-all duration-700 ease-out transform ${
-                isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-              }`}
+              className="transition-all duration-700 ease-out transform opacity-100 translate-y-0" 
             >
               <h1 className="text-3xl md:text-4xl font-bold text-hackathon-blue mb-4">
                 Software Track Challenges
@@ -162,9 +159,8 @@ const SoftwareTrack = () => {
           </div>
 
           <div
-            className={`mt-12 text-center transition-all duration-700 ease-out transform delay-500 ${
-              isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
+            className="mt-12 text-center transition-all duration-700 ease-out transform delay-500 opacity-100 translate-y-0"
+
           >
             <h3 className="text-xl font-semibold text-hackathon-blue mb-4">
               Ready to take on a challenge?

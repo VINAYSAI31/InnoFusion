@@ -4,12 +4,12 @@ import { Check, Calendar } from "lucide-react";
 
 const events = [
   {
-    date: "October 1, 2023",
+    date: "March 12, 20245",
     title: "Registration Opens",
     description: "Begin your journey by registering your team",
   },
   {
-    date: "October 10, 2023",
+    date: "March 21, 2025",
     title: "Registration Closes",
     description: "Last day to register and form teams",
   },

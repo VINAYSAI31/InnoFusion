@@ -1,5 +1,5 @@
-
 import { useEffect, useRef, useState } from "react";
+import { Trophy, Gift, Award } from "lucide-react";
 
 const AboutSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -31,6 +31,7 @@ const AboutSection = () => {
       className="py-16 md:py-24 bg-gradient-to-b from-white to-hackathon-gray-light"
     >
       <div className="container mx-auto px-4 md:px-6">
+        {/* Title section */}
         <div
           className={`transition-all duration-700 ease-out delay-100 transform ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
@@ -42,7 +43,8 @@ const AboutSection = () => {
           <div className="w-20 h-1 bg-hackathon-orange mx-auto mb-12"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          {/* Rules Section */}
           <div
             className={`transition-all duration-700 ease-out delay-200 transform ${
               isVisible
@@ -50,103 +52,142 @@ const AboutSection = () => {
                 : "opacity-0 -translate-x-10"
             }`}
           >
-            <h3 className="text-2xl font-semibold text-hackathon-blue-light mb-4">
-              Organized By
-            </h3>
-            <div className="space-y-6">
-              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all">
-                <h4 className="text-xl font-bold text-hackathon-blue mb-3">
-                  SODS Club
-                </h4>
-                <p className="text-hackathon-gray-dark">
-                  The Society of Data Science (SODS) is dedicated to fostering a
-                  community focused on data science, machine learning, and AI.
-                  With regular workshops, competitions, and industry
-                  connections, SODS helps students develop data skills essential
-                  for the modern tech landscape.
-                </p>
-              </div>
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all h-full">
+              <h3 className="text-2xl font-semibold text-hackathon-blue-light mb-4">
+                Rules & Guidelines
+              </h3>
+              <ul className="space-y-3 text-hackathon-gray-dark">
+                <li className="flex items-start">
+                  <span className="mr-2">•</span>
+                  Each team can submit up to 2 projects
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">•</span>
+                  Team size: 1-4 members
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">•</span>
+                  Members cannot be part of multiple teams
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">•</span>
+                  Projects must be original work
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">•</span>
+                  Follow code of conduct
+                </li>
+              </ul>
+            </div>
+          </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all">
-                <h4 className="text-xl font-bold text-hackathon-orange mb-3">
-                  Garuda Club
-                </h4>
-                <p className="text-hackathon-gray-dark">
-                Garuda, the university's premier drone club, 
-                is dedicated to the thrilling world of drone technology. 
-                Members dive into drone design, development, and innovation through hands-on projects,
-                 exciting drone competitions, and skill-building workshops, 
-                 empowering enthusiasts to soar to new heights in aerial technology.
-                </p>
+          {/* Judging Criteria */}
+          <div
+            className={`transition-all duration-700 ease-out delay-300 transform ${
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-10"
+            }`}
+          >
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all h-full">
+              <h3 className="text-2xl font-semibold text-hackathon-orange mb-4">
+                Judging Criteria
+              </h3>
+              <div className="space-y-4">
+                <div className="flex justify-between items-center">
+                  <span className="text-hackathon-gray-dark">Innovation</span>
+                  <span className="font-semibold text-hackathon-blue">40%</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-hackathon-gray-dark">Prototype</span>
+                  <span className="font-semibold text-hackathon-blue">30%</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-hackathon-gray-dark">Business Model</span>
+                  <span className="font-semibold text-hackathon-blue">20%</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-hackathon-gray-dark">Presentation</span>
+                  <span className="font-semibold text-hackathon-blue">10%</span>
+                </div>
               </div>
             </div>
           </div>
 
+          {/* Prizes Section */}
           <div
-            className={`transition-all duration-700 ease-out delay-300 transform ${
+            className={`transition-all duration-700 ease-out delay-400 transform ${
               isVisible
                 ? "opacity-100 translate-x-0"
                 : "opacity-0 translate-x-10"
             }`}
           >
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl font-semibold text-hackathon-blue-light mb-4">
-                Why Participate?
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all h-full">
+              <h3 className="text-2xl font-semibold text-hackathon-blue-light mb-4 flex items-center">
+                <Trophy className="mr-2 text-hackathon-orange" /> Exciting Prizes
               </h3>
-              <ul className="space-y-4">
-                <li className="flex">
-                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-hackathon-blue flex items-center justify-center text-white font-bold mr-3">
-                    1
-                  </div>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  {/* <Award className="text-hackathon-blue flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-medium text-hackathon-blue">
-                      Skill Development
-                    </h4>
+                    <h4 className="font-semibold text-hackathon-blue">Cash Prizes</h4>
+                    <p className="text-hackathon-gray-dark">Up to ₹50,000 for winners</p>
+                  </div> */}
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Gift className="text-hackathon-orange flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-hackathon-blue">Swag & Goodies</h4>
                     <p className="text-hackathon-gray-dark">
-                      Apply your technical knowledge to real-world problems and learn new tools
+                      T-shirts, stickers, and exclusive hackathon merchandise
                     </p>
                   </div>
-                </li>
-                <li className="flex">
-                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-hackathon-blue flex items-center justify-center text-white font-bold mr-3">
-                    2
-                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Trophy className="text-hackathon-blue flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-medium text-hackathon-blue">
-                      Network & Collaborate
-                    </h4>
+                    <h4 className="font-semibold text-hackathon-blue">Special Awards</h4>
                     <p className="text-hackathon-gray-dark">
-                      Connect with like-minded individuals and industry professionals
+                       mentorship programs
                     </p>
                   </div>
-                </li>
-                <li className="flex">
-                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-hackathon-blue flex items-center justify-center text-white font-bold mr-3">
-                    3
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-hackathon-blue">
-                      Exciting Prizes
-                    </h4>
-                    <p className="text-hackathon-gray-dark">
-                      Win cash prizes, mentorship opportunities, and recognition
-                    </p>
-                  </div>
-                </li>
-                <li className="flex">
-                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-hackathon-blue flex items-center justify-center text-white font-bold mr-3">
-                    4
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-hackathon-blue">
-                      Build Your Portfolio
-                    </h4>
-                    <p className="text-hackathon-gray-dark">
-                      Create projects that showcase your abilities to future employers
-                    </p>
-                  </div>
-                </li>
-              </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Organizers Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+          <div
+            className={`transition-all duration-700 ease-out delay-500 transform ${
+              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            }`}
+          >
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h4 className="text-xl font-bold text-hackathon-blue mb-3">
+                SODS Club
+              </h4>
+              <p className="text-hackathon-gray-dark">
+                The Society of Data Science (SODS) is dedicated to fostering a
+                community focused on data science, machine learning, and AI.
+              </p>
+            </div>
+          </div>
+          <div
+            className={`transition-all duration-700 ease-out delay-600 transform ${
+              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            }`}
+          >
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h4 className="text-xl font-bold text-hackathon-orange mb-3">
+                Garuda Club
+              </h4>
+              <p className="text-hackathon-gray-dark">
+                Garuda is the university's premier electronics and robotics club.
+                From circuit design to IoT applications, Garuda members explore
+                hardware innovations.
+              </p>
             </div>
           </div>
         </div>

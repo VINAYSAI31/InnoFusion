@@ -2,7 +2,6 @@
 import { useState, useEffect, useRef } from "react";
 import { ChevronDown, ChevronUp, ExternalLink } from "lucide-react";
 import RoadmapVisualization from "./RoadmapVisualization";
-import { Link } from "react-router-dom";
 
 export type ProblemCardProps = {
   title: string;

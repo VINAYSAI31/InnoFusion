@@ -1,12 +1,10 @@
-
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import ProblemCard from "../components/ProblemCard";
+import ProblemCard, { ProblemCardProps } from "../components/ProblemCard";
 
-// Sample data for hardware track problem statements
 const hardwareProblems = [
   {
     title: "Smart Water Conservation System",
@@ -107,19 +105,17 @@ const hardwareProblems = [
 ];
 
 const HardwareTrack = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
+  // const [isLoaded, setIsLoaded] = useState(true);
 
-  // Scroll to top on page load
-  useEffect(() => {
-    window.scrollTo(0, 0);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
     
-    // Simulate loading for smoother animations
-    const timer = setTimeout(() => {
-      setIsLoaded(true);
-    }, 100);
+  //   const timer = setTimeout(() => {
+  //     setIsLoaded(true);
+  //   }, 100);
     
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   return (
     <>
@@ -139,9 +135,8 @@ const HardwareTrack = () => {
             </Link>
 
             <div
-              className={`transition-all duration-700 ease-out transform ${
-                isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-              }`}
+              className="transition-all duration-700 ease-out transform opacity-100 translate-y-0"
+              
             >
               <h1 className="text-3xl md:text-4xl font-bold text-hackathon-orange mb-4">
                 Hardware Track Challenges
@@ -162,9 +157,8 @@ const HardwareTrack = () => {
           </div>
 
           <div
-            className={`mt-12 text-center transition-all duration-700 ease-out transform delay-500 ${
-              isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
+            className="mt-12 text-center transition-all duration-700 ease-out transform delay-500
+              opacity-100 translate-y-0"
           >
             <h3 className="text-xl font-semibold text-hackathon-orange mb-4">
               Ready to build something amazing?
