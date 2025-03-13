@@ -118,11 +118,11 @@ const softwareProblems = [
     "shortDescription": "Communication system for disaster-affected individuals.",
     "fullDescription": "Design a communication platform that allows disaster-affected individuals to connect with emergency services and loved ones, even in areas with limited connectivity."
   }
-  // {
-  //   "title": "Open Innovation in Software",
-  //   "shortDescription": "Encouraging unique and innovative software solutions.",
-  //   "fullDescription": "Encourages all types of innovative ideas related to software development. If your problem statement doesn't align with the predefined categories, it can still be considered under this open innovation category. This approach values creativity and welcomes unique solutions that address real-world software challenges, ensuring no innovative idea is overlooked."
-  // }
+  {
+    "title": "Open Innovation in Software",
+    "shortDescription": "Encouraging unique and innovative software solutions.",
+    "fullDescription": "Encourages all types of innovative ideas related to software development. If your problem statement doesn't align with the predefined categories, it can still be considered under this open innovation category. This approach values creativity and welcomes unique solutions that address real-world software challenges, ensuring no innovative idea is overlooked."
+  }
 ];
 
 const SoftwareTrack = () => {
