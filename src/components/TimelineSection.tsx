@@ -16,7 +16,7 @@ const events = [
   {
     "date": "March 24, 2025",
     "title": "Results",
-    "description": "Announcement of winners and final results of the competition."
+    "description": "Announcement of selected teams"
   },
   {
     "date": "Tentative March last week - April 1st week",
