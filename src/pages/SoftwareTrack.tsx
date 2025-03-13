@@ -13,51 +13,51 @@ const softwareProblems = [
     "shortDescription": "Mobile app for real-time plant disease detection using AI.",
     "fullDescription": "Develop a mobile application that uses image recognition and AI to diagnose plant diseases in real-time, providing farmers with instant treatment recommendations."
   },
-  {
-    "title": "Smart Farming Assistant",
-    "shortDescription": "Software integrating weather, soil, and crop data for farmers.",
-    "fullDescription": "Create a software platform that integrates weather forecasts, soil data, and crop information to provide farmers with personalized irrigation and fertilization schedules, optimizing resource usage."
-  },
-  {
-    "title": "Blockchain-Based Agricultural Traceability",
-    "shortDescription": "Blockchain solution for tracking agricultural produce.",
-    "fullDescription": "Design a blockchain-based traceability system for agricultural produce, ensuring transparency in the supply chain from farm to consumer."
-  },
-  {
-    "title": "Farmer-to-Consumer Digital Marketplace",
-    "shortDescription": "A marketplace connecting small-scale farmers directly to consumers.",
-    "fullDescription": "Build a digital marketplace that connects small-scale farmers directly with consumers, eliminating intermediaries and ensuring fair pricing."
-  },
+  // {
+  //   "title": "Smart Farming Assistant",
+  //   "shortDescription": "Software integrating weather, soil, and crop data for farmers.",
+  //   "fullDescription": "Create a software platform that integrates weather forecasts, soil data, and crop information to provide farmers with personalized irrigation and fertilization schedules, optimizing resource usage."
+  // },
+  // {
+  //   "title": "Blockchain-Based Agricultural Traceability",
+  //   "shortDescription": "Blockchain solution for tracking agricultural produce.",
+  //   "fullDescription": "Design a blockchain-based traceability system for agricultural produce, ensuring transparency in the supply chain from farm to consumer."
+  // },
+  // {
+  //   "title": "Farmer-to-Consumer Digital Marketplace",
+  //   "shortDescription": "A marketplace connecting small-scale farmers directly to consumers.",
+  //   "fullDescription": "Build a digital marketplace that connects small-scale farmers directly with consumers, eliminating intermediaries and ensuring fair pricing."
+  // },
   {
     "title": "AI-Based Mental Health Detection",
     "shortDescription": "AI-powered voice analysis for early mental health diagnosis.",
     "fullDescription": "Develop a mobile application that uses AI to analyze voice patterns and detect early signs of mental health conditions, providing personalized support and resources."
   },
-  {
-    "title": "Telemedicine for Rural Healthcare",
-    "shortDescription": "Remote healthcare access through a telemedicine platform.",
-    "fullDescription": "Create a telemedicine platform that enables remote consultations between patients and doctors, particularly in underserved rural areas."
-  },
-  {
-    "title": "AI-Powered Medical Image Analysis",
-    "shortDescription": "Machine learning system for analyzing medical images.",
-    "fullDescription": "Design a system that uses machine learning to analyze medical images (X-rays, MRIs) and assist doctors in early detection of diseases."
-  },
-  {
-    "title": "Adaptive Learning Platform",
-    "shortDescription": "Personalized education platform based on student progress.",
-    "fullDescription": "Develop an adaptive learning platform that personalizes educational content based on individual student learning styles and progress."
-  },
-  {
-    "title": "VR/AR for STEM Education",
-    "shortDescription": "Immersive learning experiences using VR/AR in STEM.",
-    "fullDescription": "Create an interactive virtual reality (VR) or augmented reality (AR) application that enhances learning experiences in science, technology, engineering, and mathematics (STEM) subjects."
-  },
-  {
-    "title": "Mentorship & Tutoring Platform",
-    "shortDescription": "Connecting students with mentors and tutors.",
-    "fullDescription": "Design a platform that connects students with mentors and tutors for personalized academic support and career guidance."
-  },
+  // {
+  //   "title": "Telemedicine for Rural Healthcare",
+  //   "shortDescription": "Remote healthcare access through a telemedicine platform.",
+  //   "fullDescription": "Create a telemedicine platform that enables remote consultations between patients and doctors, particularly in underserved rural areas."
+  // },
+  // {
+  //   "title": "AI-Powered Medical Image Analysis",
+  //   "shortDescription": "Machine learning system for analyzing medical images.",
+  //   "fullDescription": "Design a system that uses machine learning to analyze medical images (X-rays, MRIs) and assist doctors in early detection of diseases."
+  // },
+  // {
+  //   "title": "Adaptive Learning Platform",
+  //   "shortDescription": "Personalized education platform based on student progress.",
+  //   "fullDescription": "Develop an adaptive learning platform that personalizes educational content based on individual student learning styles and progress."
+  // },
+  // {
+  //   "title": "VR/AR for STEM Education",
+  //   "shortDescription": "Immersive learning experiences using VR/AR in STEM.",
+  //   "fullDescription": "Create an interactive virtual reality (VR) or augmented reality (AR) application that enhances learning experiences in science, technology, engineering, and mathematics (STEM) subjects."
+  // },
+  // {
+  //   "title": "Mentorship & Tutoring Platform",
+  //   "shortDescription": "Connecting students with mentors and tutors.",
+  //   "fullDescription": "Design a platform that connects students with mentors and tutors for personalized academic support and career guidance."
+  // },
   {
     "title": "Energy Optimization System",
     "shortDescription": "Machine learning system to optimize energy consumption.",
@@ -73,36 +73,36 @@ const softwareProblems = [
     "shortDescription": "Mobile app for financial education and budgeting tools.",
     "fullDescription": "Develop a mobile application that provides financial literacy education and tools for budgeting and saving, particularly for underserved populations."
   },
-  {
-    "title": "AI-Based Fraud Detection",
-    "shortDescription": "AI-powered platform for financial fraud prevention.",
-    "fullDescription": "Create a platform that uses AI to detect and prevent financial fraud, protecting users from scams and identity theft."
-  },
-  {
-    "title": "Micro-Lending & Financial Inclusion",
-    "shortDescription": "A platform facilitating micro-loans for small businesses.",
-    "fullDescription": "Design a system that facilitates micro-lending and financial inclusion for small businesses and entrepreneurs in rural areas."
-  },
-  {
-    "title": "Carbon Emissions Tracking System",
-    "shortDescription": "Software solution for tracking carbon emissions.",
-    "fullDescription": "Develop a software solution that tracks and analyzes carbon emissions from various sources, providing insights for businesses and individuals to reduce their environmental impact."
-  },
-  {
-    "title": "Sustainable Product Marketplace",
-    "shortDescription": "Platform connecting consumers with eco-friendly businesses.",
-    "fullDescription": "Create a platform that connects consumers with local businesses offering sustainable products and services, promoting eco-friendly choices."
-  },
-  {
-    "title": "Digital Marketplace for Rural Artisans",
-    "shortDescription": "Online marketplace for rural artisans to sell products.",
-    "fullDescription": "Develop a platform that provides rural artisans with access to online marketplaces and digital marketing tools, expanding their reach and income."
-  },
-  {
-    "title": "Community Collaboration Platform",
-    "shortDescription": "A platform for rural residents to share knowledge.",
-    "fullDescription": "Create a community-based platform that facilitates knowledge sharing and collaboration among rural residents, promoting self-help and development initiatives."
-  },
+  // {
+  //   "title": "AI-Based Fraud Detection",
+  //   "shortDescription": "AI-powered platform for financial fraud prevention.",
+  //   "fullDescription": "Create a platform that uses AI to detect and prevent financial fraud, protecting users from scams and identity theft."
+  // },
+  // {
+  //   "title": "Micro-Lending & Financial Inclusion",
+  //   "shortDescription": "A platform facilitating micro-loans for small businesses.",
+  //   "fullDescription": "Design a system that facilitates micro-lending and financial inclusion for small businesses and entrepreneurs in rural areas."
+  // },
+  // {
+  //   "title": "Carbon Emissions Tracking System",
+  //   "shortDescription": "Software solution for tracking carbon emissions.",
+  //   "fullDescription": "Develop a software solution that tracks and analyzes carbon emissions from various sources, providing insights for businesses and individuals to reduce their environmental impact."
+  // },
+  // {
+  //   "title": "Sustainable Product Marketplace",
+  //   "shortDescription": "Platform connecting consumers with eco-friendly businesses.",
+  //   "fullDescription": "Create a platform that connects consumers with local businesses offering sustainable products and services, promoting eco-friendly choices."
+  // },
+  // {
+  //   "title": "Digital Marketplace for Rural Artisans",
+  //   "shortDescription": "Online marketplace for rural artisans to sell products.",
+  //   "fullDescription": "Develop a platform that provides rural artisans with access to online marketplaces and digital marketing tools, expanding their reach and income."
+  // },
+  // {
+  //   "title": "Community Collaboration Platform",
+  //   "shortDescription": "A platform for rural residents to share knowledge.",
+  //   "fullDescription": "Create a community-based platform that facilitates knowledge sharing and collaboration among rural residents, promoting self-help and development initiatives."
+  // },
   {
     "title": "AI-Based Disaster Prediction & Tracking",
     "shortDescription": "Real-time disaster prediction using AI and data analysis.",
@@ -117,12 +117,12 @@ const softwareProblems = [
     "title": "Emergency Communication Platform",
     "shortDescription": "Communication system for disaster-affected individuals.",
     "fullDescription": "Design a communication platform that allows disaster-affected individuals to connect with emergency services and loved ones, even in areas with limited connectivity."
-  },
-  {
-    "title": "Open Innovation in Software",
-    "shortDescription": "Encouraging unique and innovative software solutions.",
-    "fullDescription": "Encourages all types of innovative ideas related to software development. If your problem statement doesn't align with the predefined categories, it can still be considered under this open innovation category. This approach values creativity and welcomes unique solutions that address real-world software challenges, ensuring no innovative idea is overlooked."
   }
+  // {
+  //   "title": "Open Innovation in Software",
+  //   "shortDescription": "Encouraging unique and innovative software solutions.",
+  //   "fullDescription": "Encourages all types of innovative ideas related to software development. If your problem statement doesn't align with the predefined categories, it can still be considered under this open innovation category. This approach values creativity and welcomes unique solutions that address real-world software challenges, ensuring no innovative idea is overlooked."
+  // }
 ];
 
 const SoftwareTrack = () => {

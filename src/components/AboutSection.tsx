@@ -113,7 +113,7 @@ const AboutSection = () => {
                 <Trophy className="mr-2 text-hackathon-orange" /> Exciting Prizes
               </h3>
               <div className="space-y-4">
-                <div className="flex items-start space-x-3">
+                {/* <div className="flex items-start space-x-3">
                   <Gift className="text-hackathon-orange flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-semibold text-hackathon-blue">Swag & Goodies</h4>
@@ -121,13 +121,31 @@ const AboutSection = () => {
                       T-shirts, stickers, and exclusive hackathon merchandise
                     </p>
                   </div>
-                </div>
-                <div className="flex items-start space-x-3">
+                </div> */}
+                {/* <div className="flex items-start space-x-3">
                   <Trophy className="text-hackathon-blue flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-semibold text-hackathon-blue">Special Awards</h4>
                     <p className="text-hackathon-gray-dark">
                       Mentorship programs
+                    </p>
+                  </div>
+                </div> */}
+                <div className="flex items-start space-x-3">
+                  <Gift className="text-hackathon-blue flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-hackathon-blue">Mementos</h4>
+                    <p className="text-hackathon-gray-dark">
+                      Special mementos for outstanding participants
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Trophy className="text-hackathon-orange flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-hackathon-blue">Top 3 Winners</h4>
+                    <p className="text-hackathon-gray-dark">
+                      Top 3 projects from both software and hardware categories will be awarded special prizes
                     </p>
                   </div>
                 </div>
