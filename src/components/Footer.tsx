@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Mail, MapPin } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -34,7 +34,7 @@ const Footer = () => {
                 <MapPin size={18} className="mr-2 mt-1 flex-shrink-0" />
                 <span>KLUniversity, Vijayawada</span>
               </p>
-              <p className="flex items-center">
+              {/* <p className="flex items-center">
                 <Mail size={18} className="mr-2 flex-shrink-0" />
                 <a
                   href="mailto:hackathon@example.com"
@@ -42,24 +42,28 @@ const Footer = () => {
                 >
                   datascience.sods@kluniveristy.in
                 </a>
-              </p>
-              {/* <p className="flex items-center">
+              </p> */}
+              <p className="flex items-center">
                 <Phone size={18} className="mr-2 flex-shrink-0" />
                 <a
                   href="tel:+1234567890"
                   className="hover:text-white transition-colors"
                 >
-                  +123 456 7890
+                  Venkat : 9247456666 <br/>
+                  Ch.Nithin: 9908041738 <br/>
+                  Vaishnavi: 9032034945 <br/>
+                  Vishal: 9392859211
                 </a>
-              </p> */}
+              </p>
             </div>
           </div>
 
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Organized By</h3>
             <div className="space-y-2 text-gray-300">
-              <p>SODS Club</p>
-              <p>Garuda Club</p>
+            <p><a href="https://sods-klef.vercel.app/" target="_blank">SODS Club</a></p>
+<p><a href="https://klgaruda.netlify.app/" target="_blank">Garuda Club</a></p>
+
             </div>
           </div>
         </div>

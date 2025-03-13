@@ -31,7 +31,7 @@ const Navbar = () => {
        <img src="/cse.png" alt="Sponsor 1" className="h-[6.5rem] w-[11rem] object-contain flex-none" />
       <img src="/fest.png" alt="Sponsor 2" className="h-[3.5rem] w-[14rem] object-contain flex-none" />
       <img src="/logo.png" alt="Sponsor 3" className="h-[7.5rem] w-[17rem] object-contain flex-none" />
-      <img src="/sods.png" alt="Sponsor 3" className="h-[5.3rem] w-[11rem] object-contain flex-none" />
+      <img src="/sods.png" alt="Sponsor 3" className="h-[6.3rem] w-[11rem] object-contain flex-none" />
       <img src="/garuda.jpg" alt="Sponsor 4" className="h-[5.3rem] w-[16rem] object-contain flex-none" />
 </div>
 

@@ -4,7 +4,7 @@ import { Check, Calendar } from "lucide-react";
 
 const events = [
   {
-    date: "March 12, 20245",
+    date: "March 13, 2025",
     title: "Registration Opens",
     description: "Begin your journey by registering your team",
   },
@@ -14,26 +14,18 @@ const events = [
     description: "Last day to register and form teams",
   },
   {
-    date: "October 15, 2023",
-    title: "Kickoff Event",
-    description:
-      "Virtual opening ceremony with problem statement announcements",
+    "date": "March 24, 2025",
+    "title": "Results",
+    "description": "Announcement of winners and final results of the competition."
   },
   {
-    date: "October 20, 2023",
-    title: "Mid-point Check",
-    description: "Progress review and mentor feedback session",
-  },
-  {
-    date: "October 28, 2023",
-    title: "Submission Deadline",
-    description: "Final submissions due by 11:59 PM",
-  },
-  {
-    date: "October 30, 2023",
-    title: "Results & Closing",
-    description: "Winners announced and closing ceremony",
-  },
+    "date": "Tentative March last week - April 1st week",
+    "title": "Final Round",
+    "description": "Evaluation of shortlisted projects and final presentations."
+  }
+  
+
+ 
 ];
 
 const TimelineSection = () => {

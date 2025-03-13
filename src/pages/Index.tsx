@@ -15,13 +15,14 @@ const Index = () => {
 
   return (
     <>
+      
+      {/* <main className="overflow-hidden"> */}
       <Navbar />
-      <main className="overflow-hidden">
         <Hero />
         <AboutSection />
         <TimelineSection />
         <SponsorsSection />
-      </main>
+      {/* </main> */}
       <Footer />
     </>
   );

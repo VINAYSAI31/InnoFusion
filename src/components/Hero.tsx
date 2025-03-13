@@ -48,9 +48,7 @@ const Hero = () => {
             }`}
           >
             <p className="text-lg text-hackathon-gray-dark mb-8 max-w-2xl mx-auto">
-              Join us on <span className="font-semibold">October 15-30, 2023</span>{" "}
-              for an exciting opportunity to tackle real-world challenges and
-              showcase your technical skills.
+            Join us on  for an exciting opportunity to tackle real-world challenges and showcase your technical skills.
             </p>
           </div>
 
@@ -60,7 +58,7 @@ const Hero = () => {
             }`}
           >
             <Link
-              to="https://forms.google.com"
+              to="https://forms.gle/KBC4Ppqe6vknuVzT6"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center bg-hackathon-blue text-white font-medium px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all hover:bg-hackathon-blue-light hover:scale-105 active:scale-100 mr-4 mb-4"

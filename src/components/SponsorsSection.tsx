@@ -40,7 +40,7 @@ const SponsorsSection = () => {
           </h2>
           <div className="w-20 h-1 bg-hackathon-orange mx-auto mb-6"></div>
           <p className="text-center text-hackathon-gray-dark max-w-2xl mx-auto mb-12">
-            We're grateful to SUKDT for making this hackathon possible and providing valuable resources to participants.
+            We're grateful to SVKDT for making this hackathon possible and providing valuable resources to participants.
           </p>
         </div>
 
@@ -49,11 +49,11 @@ const SponsorsSection = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all flex items-center justify-center hover-lift">
+          <div className="  rounded-lg shadow-sm hover:shadow-md transition-all flex items-center justify-center hover-lift">
             <img
               src="/images/sukdt.jpg" 
               alt="SUKDT Logo"
-              className="h-16 w-auto"
+              className="h-[10.8rem] w-auto"
             />
           </div>
         </div>

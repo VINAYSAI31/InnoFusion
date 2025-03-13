@@ -103,7 +103,7 @@ const ProblemCard = ({
             </h4>
             <p className="text-hackathon-gray-dark mb-6">{fullDescription}</p>
 
-            <h4 className="text-lg font-semibold text-hackathon-blue mb-3">
+            {/* <h4 className="text-lg font-semibold text-hackathon-blue mb-3">
               Expected Outcomes
             </h4>
             <ul className="list-disc pl-5 mb-6 text-hackathon-gray-dark">
@@ -112,13 +112,13 @@ const ProblemCard = ({
                   {outcome}
                 </li>
               ))}
-            </ul>
+            </ul> */}
 
-            <h4 className="text-lg font-semibold text-hackathon-blue mb-3">
+            {/* <h4 className="text-lg font-semibold text-hackathon-blue mb-3">
               Roadmap
             </h4>
-            <RoadmapVisualization />
-
+            <RoadmapVisualization /> */}
+{/* 
             <h4 className="text-lg font-semibold text-hackathon-blue mb-3">
               Recommended Resources
             </h4>
@@ -140,7 +140,7 @@ const ProblemCard = ({
                   />
                 </a>
               ))}
-            </div>
+            </div> */}
 
             <div className="text-center">
               {/* <Link
