@@ -20,7 +20,7 @@ const events = [
   },
   {
     "date": "Tentative March last week - April 1st week",
-    "title": "Final Round",
+    "title": "Final Round (OffLine)",
     "description": "Evaluation of shortlisted projects and final presentations."
   }
   
