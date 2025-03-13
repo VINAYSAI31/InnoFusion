@@ -23,7 +23,7 @@ const Footer = () => {
               <FooterLink to="/">Home</FooterLink>
               <FooterLink to="/software-track">Software Track</FooterLink>
               <FooterLink to="/hardware-track">Hardware Track</FooterLink>
-              <FooterLink to="https://forms.google.com">Register</FooterLink>
+              <FooterLink to="https://forms.gle/KBC4Ppqe6vknuVzT6">Register</FooterLink>
             </nav>
           </div>
 
