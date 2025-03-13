@@ -13,15 +13,15 @@ export type ProblemCardProps = {
     url: string;
   }>;
   index: number;
+  category: "software" | "hardware"; // Added category prop
 };
 
 const ProblemCard = ({
   title,
   shortDescription,
   fullDescription,
-  expectedOutcomes,
-  resources,
   index,
+  category,
 }: ProblemCardProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [height, setHeight] = useState<number | undefined>(undefined);
@@ -61,13 +61,16 @@ const ProblemCard = ({
     setIsExpanded(!isExpanded);
   };
 
+  // Determine the challenge code
+  const challengeCode = category === "software" 
+  ? `SF${String(index + 1).padStart(2, "0")}` 
+  : `HD${String(index + 1).padStart(2, "0")}`;
+
   return (
     <div
       ref={cardRef}
       className={`bg-white rounded-lg shadow-md overflow-hidden transition-all duration-500 transform ${
-        isVisible
-          ? "opacity-100 translate-y-0"
-          : "opacity-0 translate-y-10"
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       } delay-${index * 100}`}
     >
       <div
@@ -79,7 +82,7 @@ const ProblemCard = ({
         <div className="flex justify-between items-start">
           <div>
             <span className="inline-block px-3 py-1 bg-hackathon-blue/10 text-hackathon-blue rounded-full text-sm font-medium mb-3">
-              Challenge #{index + 1}
+              {challengeCode}
             </span>
             <h3 className="text-xl md:text-2xl font-bold text-hackathon-blue mb-2">
               {title}
@@ -102,56 +105,6 @@ const ProblemCard = ({
               Problem Description
             </h4>
             <p className="text-hackathon-gray-dark mb-6">{fullDescription}</p>
-
-            {/* <h4 className="text-lg font-semibold text-hackathon-blue mb-3">
-              Expected Outcomes
-            </h4>
-            <ul className="list-disc pl-5 mb-6 text-hackathon-gray-dark">
-              {expectedOutcomes.map((outcome, i) => (
-                <li key={i} className="mb-2">
-                  {outcome}
-                </li>
-              ))}
-            </ul> */}
-
-            {/* <h4 className="text-lg font-semibold text-hackathon-blue mb-3">
-              Roadmap
-            </h4>
-            <RoadmapVisualization /> */}
-{/* 
-            <h4 className="text-lg font-semibold text-hackathon-blue mb-3">
-              Recommended Resources
-            </h4>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
-              {resources.map((resource, i) => (
-                <a
-                  key={i}
-                  href={resource.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center bg-hackathon-gray-light hover:bg-hackathon-blue/5 p-3 rounded-md transition-colors group"
-                >
-                  <span className="flex-grow text-hackathon-gray-dark">
-                    {resource.name}
-                  </span>
-                  <ExternalLink
-                    size={16}
-                    className="text-hackathon-blue-light group-hover:text-hackathon-blue transition-colors"
-                  />
-                </a>
-              ))}
-            </div> */}
-
-            <div className="text-center">
-              {/* <Link
-                to="https://forms.google.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-hackathon-blue text-white px-6 py-3 rounded-md font-medium hover:bg-hackathon-blue-light transition-colors shadow-md hover:shadow-lg"
-              >
-                Register for this challenge
-              </Link> */}
-            </div>
           </div>
         </div>
       </div>

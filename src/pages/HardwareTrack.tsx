@@ -92,7 +92,8 @@ const HardwareTrack = () => {
 
           <div className="space-y-8">
             {hardwareProblems.map((problem, index) => (
-              <ProblemCard key={index} {...problem} index={index} />
+              <ProblemCard key={index} {...problem} index={index} category="Hardware" />
+
             ))}
           </div>
 

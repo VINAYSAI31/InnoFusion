@@ -176,7 +176,8 @@ const SoftwareTrack = () => {
 
           <div className="space-y-8">
             {softwareProblems.map((problem, index) => (
-              <ProblemCard key={index} {...problem} index={index} />
+              <ProblemCard key={index} {...problem} index={index} category="software" />
+
             ))}
           </div>
 
