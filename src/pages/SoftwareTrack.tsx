@@ -117,7 +117,7 @@ const softwareProblems = [
     "title": "Emergency Communication Platform",
     "shortDescription": "Communication system for disaster-affected individuals.",
     "fullDescription": "Design a communication platform that allows disaster-affected individuals to connect with emergency services and loved ones, even in areas with limited connectivity."
-  }
+  },
   {
     "title": "Open Innovation in Software",
     "shortDescription": "Encouraging unique and innovative software solutions.",
