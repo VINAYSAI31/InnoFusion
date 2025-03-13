@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Trophy, Gift, Award } from "lucide-react";
+import { Trophy, Gift } from "lucide-react";
 
 const AboutSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -43,6 +43,7 @@ const AboutSection = () => {
           <div className="w-20 h-1 bg-hackathon-orange mx-auto mb-12"></div>
         </div>
 
+        {/* Sections (Rules, Judging, Prizes) */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {/* Rules Section */}
           <div
@@ -57,26 +58,11 @@ const AboutSection = () => {
                 Rules & Guidelines
               </h3>
               <ul className="space-y-3 text-hackathon-gray-dark">
-                <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  Each team can submit up to 2 projects
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  Team size: 1-4 members
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  Members cannot be part of multiple teams
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  Projects must be original work
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  Follow code of conduct
-                </li>
+                <li>• Each team can submit up to 2 projects</li>
+                <li>• Team size: 1-4 members</li>
+                <li>• Members cannot be part of multiple teams</li>
+                <li>• Projects must be original work</li>
+                <li>• Follow code of conduct</li>
               </ul>
             </div>
           </div>
@@ -94,20 +80,20 @@ const AboutSection = () => {
                 Judging Criteria
               </h3>
               <div className="space-y-4">
-                <div className="flex justify-between items-center">
-                  <span className="text-hackathon-gray-dark">Innovation</span>
+                <div className="flex justify-between">
+                  <span>Innovation</span>
                   <span className="font-semibold text-hackathon-blue">40%</span>
                 </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-hackathon-gray-dark">Prototype</span>
+                <div className="flex justify-between">
+                  <span>Prototype</span>
                   <span className="font-semibold text-hackathon-blue">30%</span>
                 </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-hackathon-gray-dark">Business Model</span>
+                <div className="flex justify-between">
+                  <span>Business Model</span>
                   <span className="font-semibold text-hackathon-blue">20%</span>
                 </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-hackathon-gray-dark">Presentation</span>
+                <div className="flex justify-between">
+                  <span>Presentation</span>
                   <span className="font-semibold text-hackathon-blue">10%</span>
                 </div>
               </div>
@@ -128,13 +114,6 @@ const AboutSection = () => {
               </h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  {/* <Award className="text-hackathon-blue flex-shrink-0 mt-1" />
-                  <div>
-                    <h4 className="font-semibold text-hackathon-blue">Cash Prizes</h4>
-                    <p className="text-hackathon-gray-dark">Up to ₹50,000 for winners</p>
-                  </div> */}
-                </div>
-                <div className="flex items-start space-x-3">
                   <Gift className="text-hackathon-orange flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-semibold text-hackathon-blue">Swag & Goodies</h4>
@@ -148,7 +127,7 @@ const AboutSection = () => {
                   <div>
                     <h4 className="font-semibold text-hackathon-blue">Special Awards</h4>
                     <p className="text-hackathon-gray-dark">
-                       mentorship programs
+                      Mentorship programs
                     </p>
                   </div>
                 </div>
@@ -190,6 +169,15 @@ const AboutSection = () => {
               </p>
             </div>
           </div>
+        </div>
+
+        {/* Hackathon Poster */}
+        <div className="flex justify-center mt-12">
+          <img
+            src="/hack.jpg"
+            alt="Hackathon Poster"
+            className="w-full max-w-2xl rounded-lg shadow-lg"
+          />
         </div>
       </div>
     </section>
