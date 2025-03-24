@@ -19,7 +19,7 @@ const events = [
     "description": "Announcement of selected teams"
   },
   {
-    "date": "April 8",
+    "date": "April 8, 2025",
     "title": "Final Round (OffLine)",
     "description": "Evaluation of shortlisted projects and final presentations."
   }
