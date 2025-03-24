@@ -9,17 +9,17 @@ const events = [
     description: "Begin your journey by registering your team",
   },
   {
-    date: "March 21, 2025",
+    date: "March 27, 2025",
     title: "Registration Closes",
     description: "Last day to register and form teams",
   },
   {
-    "date": "March 24, 2025",
+    "date": "April 1, 2025",
     "title": "Results",
     "description": "Announcement of selected teams"
   },
   {
-    "date": "Tentative March last week - April 1st week",
+    "date": "April 8",
     "title": "Final Round (OffLine)",
     "description": "Evaluation of shortlisted projects and final presentations."
   }
