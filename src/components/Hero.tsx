@@ -1,5 +1,5 @@
 
-import { ArrowRight } from "lucide-react";
+import { ArrowRight,Trophy } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -52,21 +52,16 @@ const Hero = () => {
             </p>
           </div>
 
-          <div
-            className={`transition-all duration-700 delay-300 ease-out transform ${
-              loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
-          >
-            <Link
-              to="https://forms.gle/KBC4Ppqe6vknuVzT6"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center bg-hackathon-blue text-white font-medium px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all hover:bg-hackathon-blue-light hover:scale-105 active:scale-100 mr-4 mb-4"
-            >
-              Register Now
-              <ArrowRight size={18} className="ml-2" />
-            </Link>
-          </div>
+          <div className="mt-6">
+              <Link
+                to="/finalists"
+                className="inline-flex items-center gap-2 bg-hackathon-orange text-white font-medium px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all hover:bg-hackathon-orange/90 hover:scale-105 active:scale-100 animate-pulse"
+              >
+                <Trophy size={18} />
+                View Finalists List
+                <ArrowRight size={18} />
+              </Link>
+            </div>
         </div>
 
         <div

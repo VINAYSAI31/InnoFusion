@@ -9,6 +9,7 @@ import SoftwareTrack from "./pages/SoftwareTrack";
 import HardwareTrack from "./pages/HardwareTrack";
 import NotFound from "./pages/NotFound";
 import { Analytics } from "@vercel/analytics/react"
+import FinalistsList from "./pages/FinalistsList";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/software-track" element={<SoftwareTrack />} />
           <Route path="/hardware-track" element={<HardwareTrack />} />
+          <Route path="/finalists" element={<FinalistsList />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

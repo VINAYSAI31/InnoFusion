@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <header
-      className="absolute inset-0 bg-gradient-to-b from-hackathon-blue/5 to-white/80  py-2" 
+      className="absolute inset-0 bg-gradient-to-b from-hackathon-blue/5 to-white/8  py-2" 
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
